@@ -2,4 +2,27 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta "océano" del tema -->
+    <color name="ocean_primary">#FF0B5E7E</color>
+    <color name="ocean_on_primary">#FFFFFFFF</color>
+    <color name="ocean_primary_container">#FFBEE9FF</color>
+    <color name="ocean_on_primary_container">#FF001F2A</color>
+    <color name="compass_secondary">#FF7A5900</color>
+    <color name="compass_on_secondary">#FFFFFFFF</color>
+    <color name="compass_secondary_container">#FFFFDEA6</color>
+    <color name="compass_on_secondary_container">#FF261900</color>
+    <color name="land_tertiary">#FF2E6B3A</color>
+    <color name="land_on_tertiary">#FFFFFFFF</color>
+
+    <!-- Fondo de mapamundi -->
+    <color name="map_ocean_top">#FFD6ECF6</color>
+    <color name="map_ocean_bottom">#FFA9D3E8</color>
+    <color name="map_land">#FFEFE6CC</color>
+    <color name="map_coast">#FF9FB59A</color>
+    <color name="map_grid">#407AA9BF</color>
+
+    <!-- Superficies translúcidas para dejar ver el mapa -->
+    <color name="surface_translucent">#E6FFFFFF</color>
+    <color name="button_outlined_background">#CCFFFFFF</color>
 </resources>

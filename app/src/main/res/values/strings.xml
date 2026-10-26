@@ -1,3 +1,66 @@
 <resources>
-    <string name="app_name">Practica1</string>
+    <string name="app_name">Quiz de Geografía</string>
+
+    <!-- Pantalla de juego -->
+    <string name="progress_format">Pregunta %1$d de %2$d</string>
+    <string name="score_format">Puntos: %1$d</string>
+    <string name="answer">Responder</string>
+    <string name="restart">Reiniciar</string>
+    <string name="spinner_hint">Selecciona una respuesta</string>
+    <string name="select_answer_first">Selecciona una respuesta antes de continuar</string>
+    <string name="question_image_description">Imagen de la pregunta</string>
+    <string name="correct_answer_message">¡Correcto! +3 puntos</string>
+    <string name="wrong_answer_title">Respuesta incorrecta</string>
+    <string name="wrong_answer_message">Has perdido 2 puntos. La respuesta correcta era: %1$s.</string>
+    <string name="continue_game">Continuar</string>
+    <string name="start_over">Empezar de nuevo</string>
+
+    <!-- Pantalla de resultado -->
+    <string name="game_over">¡Juego terminado!</string>
+    <string name="final_score_label">Puntuación final</string>
+    <string name="correct_count_format">Aciertos: %1$d de %2$d</string>
+    <string name="result_excellent">¡Perfecto! Eres un experto en geografía.</string>
+    <string name="result_good">¡Buen trabajo! Casi lo tienes.</string>
+    <string name="result_bad">Sigue practicando, ¡la próxima saldrá mejor!</string>
+    <string name="play_again">Jugar de nuevo</string>
+
+    <!-- Preguntas -->
+    <string name="q_capital_australia">¿Cuál es la capital de Australia?</string>
+    <string-array name="q_capital_australia_options">
+        <item>Sídney</item>
+        <item>Canberra</item>
+        <item>Melbourne</item>
+        <item>Perth</item>
+    </string-array>
+
+    <string name="q_flag_country">¿De qué país es esta bandera?</string>
+    <string-array name="q_flag_japan_options">
+        <item>China</item>
+        <item>Corea del Sur</item>
+        <item>Japón</item>
+        <item>Bangladés</item>
+    </string-array>
+
+    <string name="q_flag_italy">¿Cuál de estas es la bandera de Italia?</string>
+    <string-array name="q_flag_italy_options">
+        <item>Francia</item>
+        <item>Irlanda</item>
+        <item>Bélgica</item>
+        <item>Italia</item>
+    </string-array>
+
+    <string name="q_longest_river">¿Cuál es el río más largo de Europa?</string>
+    <string-array name="q_longest_river_options">
+        <item>Volga</item>
+        <item>Danubio</item>
+        <item>Rin</item>
+        <item>Loira</item>
+    </string-array>
+
+    <string-array name="q_flag_sweden_options">
+        <item>Noruega</item>
+        <item>Suecia</item>
+        <item>Finlandia</item>
+        <item>Dinamarca</item>
+    </string-array>
 </resources>

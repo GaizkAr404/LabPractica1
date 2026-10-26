@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fondo de las pantallas: océano degradado con el mapamundi centrado -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="@color/map_ocean_bottom"
+                android:startColor="@color/map_ocean_top" />
+        </shape>
+    </item>
+    <item
+        android:width="1000dp"
+        android:height="500dp"
+        android:drawable="@drawable/world_map"
+        android:gravity="center" />
+</layer-list>

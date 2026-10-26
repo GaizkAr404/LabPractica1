@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ocean_primary">#FF7DD0F5</color>
+    <color name="ocean_on_primary">#FF003548</color>
+    <color name="ocean_primary_container">#FF004D66</color>
+    <color name="ocean_on_primary_container">#FFBEE9FF</color>
+    <color name="compass_secondary">#FFF5BE48</color>
+    <color name="compass_on_secondary">#FF402D00</color>
+    <color name="compass_secondary_container">#FF5C4300</color>
+    <color name="compass_on_secondary_container">#FFFFDEA6</color>
+    <color name="land_tertiary">#FF95D69C</color>
+    <color name="land_on_tertiary">#FF00390F</color>
+
+    <color name="map_ocean_top">#FF0A1F2C</color>
+    <color name="map_ocean_bottom">#FF06141D</color>
+    <color name="map_land">#FF1C3644</color>
+    <color name="map_coast">#FF2F5568</color>
+    <color name="map_grid">#40467F99</color>
+
+    <color name="surface_translucent">#E6141E24</color>
+    <color name="button_outlined_background">#CC141E24</color>
+</resources>

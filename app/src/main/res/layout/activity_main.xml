@@ -1,19 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_world_map"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            tools:text="Pregunta 1 de 5" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            tools:text="Puntos: 0" />
+    </LinearLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        app:trackCornerRadius="4dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/surface_translucent"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                tools:text="¿Cuál es la capital de Australia?" />
+
+            <ImageView
+                android:id="@+id/ivQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/question_image_description"
+                android:visibility="gone"
+                tools:src="@drawable/flag_japan"
+                tools:visibility="visible" />
+
+            <!-- Solo uno de estos controles está visible según el tipo de pregunta -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1">
+
+                <ScrollView
+                    android:id="@+id/radioContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:id="@+id/rgOptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbOption0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp" />
+                    </RadioGroup>
+                </ScrollView>
+
+                <Spinner
+                    android:id="@+id/spOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/lvOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:visibility="gone" />
+
+                <GridLayout
+                    android:id="@+id/glImageOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:visibility="gone">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardOption0"
+                        style="@style/ImageOptionCard">
+
+                        <ImageView
+                            android:id="@+id/ivOption0"
+                            style="@style/ImageOptionImage"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardOption1"
+                        style="@style/ImageOptionCard">
+
+                        <ImageView
+                            android:id="@+id/ivOption1"
+                            style="@style/ImageOptionImage"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardOption2"
+                        style="@style/ImageOptionCard">
+
+                        <ImageView
+                            android:id="@+id/ivOption2"
+                            style="@style/ImageOptionImage"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardOption3"
+                        style="@style/ImageOptionCard">
+
+                        <ImageView
+                            android:id="@+id/ivOption3"
+                            style="@style/ImageOptionImage"
+                            android:importantForAccessibility="no" />
+                    </com.google.android.material.card.MaterialCardView>
+                </GridLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/btnRestart"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/restart"
+            app:icon="@drawable/ic_restart" />
+
+        <Button
+            android:id="@+id/btnAnswer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/answer"
+            app:icon="@drawable/ic_check" />
+    </LinearLayout>
+
+</LinearLayout>

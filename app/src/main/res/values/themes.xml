@@ -1,8 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Practica1" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Colores definidos en values/colors.xml y values-night/colors.xml -->
+        <item name="colorPrimary">@color/ocean_primary</item>
+        <item name="colorOnPrimary">@color/ocean_on_primary</item>
+        <item name="colorPrimaryContainer">@color/ocean_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/ocean_on_primary_container</item>
+        <item name="colorSecondary">@color/compass_secondary</item>
+        <item name="colorOnSecondary">@color/compass_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/compass_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/compass_on_secondary_container</item>
+        <item name="colorTertiary">@color/land_tertiary</item>
+        <item name="colorOnTertiary">@color/land_on_tertiary</item>
+
+        <!-- Botones temáticos -->
+        <item name="materialButtonStyle">@style/Widget.Practica1.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.Practica1.Button.Outlined</item>
     </style>
 
     <style name="Theme.Practica1" parent="Base.Theme.Practica1" />

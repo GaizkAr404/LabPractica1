@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tarjeta seleccionable que contiene una opción de respuesta con imagen -->
+    <style name="ImageOptionCard" parent="Widget.Material3.CardView.Outlined">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:checkable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Botón principal: relleno color océano, esquinas redondeadas y texto en negrita -->
+    <style name="Widget.Practica1.Button" parent="Widget.Material3.Button">
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:elevation">4dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">8dp</item>
+    </style>
+
+    <!-- Botón secundario: borde grueso y fondo translúcido para leerse sobre el mapa -->
+    <style name="Widget.Practica1.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="backgroundTint">@color/button_outlined_background</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">8dp</item>
+    </style>
+
+    <style name="ImageOptionImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+</resources>
