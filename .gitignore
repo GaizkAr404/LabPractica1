@@ -1,0 +1,68 @@
+# Gradle
+.gradle/
+build/
+/captures
+.externalNativeBuild
+.cxx/
+.kotlin/
+
+# Local configuration (SDK path, signing secrets)
+local.properties
+secrets.properties
+keystore.properties
+
+# Built application files
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output.json
+output-metadata.json
+
+# Signing keys
+*.jks
+*.keystore
+
+# Android Studio / IntelliJ
+*.iml
+*.ipr
+*.iws
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/tasks.xml
+/.idea/dictionaries
+/.idea/shelf
+/.idea/deploymentTargetDropDown.xml
+/.idea/deploymentTargetSelector.xml
+/.idea/appInsightsSettings.xml
+/.idea/studiobot.xml
+/.idea/other.xml
+/.idea/markdown.xml
+/.idea/inspectionProfiles
+/.idea/sonarlint
+out/
+
+# Logs and crash dumps
+*.log
+*.hprof
+captures/
+
+# Lint / test reports
+lint-results*.xml
+lint-results*.html
+
+# Google services config (may contain API keys)
+google-services.json
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Claude Code local settings
+.claude/settings.local.json
