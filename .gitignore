@@ -28,23 +28,7 @@ output-metadata.json
 *.iml
 *.ipr
 *.iws
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-/.idea/tasks.xml
-/.idea/dictionaries
-/.idea/shelf
-/.idea/deploymentTargetDropDown.xml
-/.idea/deploymentTargetSelector.xml
-/.idea/appInsightsSettings.xml
-/.idea/studiobot.xml
-/.idea/other.xml
-/.idea/markdown.xml
-/.idea/inspectionProfiles
-/.idea/sonarlint
+/.idea/
 out/
 
 # Logs and crash dumps
