@@ -66,3 +66,6 @@ Desktop.ini
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Claude Code project instructions (kept local only)
+CLAUDE.md
